@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WWW.ESZPFC.COM</title>
+
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 21px;
+      background-color: white;
+    }
+
+    img {
+      width: 301px; /* vagy: max-width: 100%; height: auto; */
+      height: auto;
+      margin: 20px 0;
+    }
+
+    #board {
+      width: 100%;
+      height: 100px;
+      background-color: lightblue;
+      line-height: 100px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+    <h1>WELCOME</h1>
+    <h2 id="output"></h2>
+    <img src="C:\Users\HP\Pictures\unnamed (1).jpg"></img>
+    
+  </head>
+  <body>
+
+    <div id="board" style="width: 100%; height: 100px; text-align: center;">
+ 
+  </div>
+
+    <script> alert("reklam")</script>
+    <script>
+      console.log('hello');
+      console.error('hiba van');
+      console.warn('lehet hiba');
+
+      var kor = 2 ;
+      console.log(kor);
+      var nev = "ESZP FC";
+      console.log(nev);
+      const date = new Date();
+      console.log(date);
+
+      let formattedDate = date.toLocaleString('ro-RO', { timeZone: 'Europe/Bucharest' });
+
+
+
+      document.getElementById("output").textContent = "Kor: " + kor + ", Név: " + nev + ", Dátum: " + formattedDate;
+
+
+      let szam1 = 36;
+      let szam2 = 34;
+      let eredmeny = szam1 - szam2;
+      console.log(eredmeny);
+
+      document.getElementById("board").style.backgroundColor = "lightblue";
+
+
+
+
+
+    </script>
+
+  </body>
+  </html>
