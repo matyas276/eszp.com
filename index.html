@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WWW.ESZPFC.COM</title>
-
+  <div id="info"></div>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -52,8 +52,7 @@
 
     let formattedDate = date.toLocaleString('ro-RO', { timeZone: 'Europe/Bucharest' });
 
-    document.getElementById("output").textContent =
-      "Kor: " + kor + ", Név: " + nev + ", Dátum: " + formattedDate;
+    document.getElementById("info").innerHTML = `${kor}, ${nev}, ${formattedDate}`;
 
     let szam1 = 36;
     let szam2 = 34;
@@ -62,6 +61,7 @@
   </script>
 </body>
 </html>
+
 
 
 
