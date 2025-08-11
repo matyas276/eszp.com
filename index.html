@@ -34,7 +34,6 @@
   <h1>WELCOME</h1>
   <h2 id="output"></h2>
 
-  <!-- Kép megjelenítése -->
   <img src="pictures/logo.jpg" alt="logo" />
 
   <div id="board"></div>
@@ -52,7 +51,7 @@
 
     let formattedDate = date.toLocaleString('ro-RO', { timeZone: 'Europe/Bucharest' });
 
-    document.getElementById("info").innerHTML = `${kor}, ${nev}, ${formattedDate}`;
+    document.getElementById("info").innerHTML = `${nev}, ${formattedDate}`;
 
     let szam1 = 36;
     let szam2 = 34;
@@ -61,6 +60,7 @@
   </script>
 </body>
 </html>
+
 
 
 
